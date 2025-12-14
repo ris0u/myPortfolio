@@ -1,11 +1,24 @@
-<script setup></script>
+// this is where the logic goes 
+<script setup>
 
+</script>
+
+// this is where the structure(html) goes
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class ="profile">
+    <img src=""
+  </div>
 </template>
 
-<style scoped></style>
+// this is where the styles(css) go
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+</style>
