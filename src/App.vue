@@ -1,16 +1,21 @@
-// this is where the logic goes 
 <script setup>
-
+import Header from './components/Header.vue'
+import About from './components/About.vue'
+import Projects from './components/Projects.vue'
+import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 </script>
 
-// this is where the structure(html) goes
 <template>
-  <div class ="profile">
-    <img src=""
-  </div>
+    <div id="app">
+        <Header />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+    </div>
 </template>
 
-// this is where the styles(css) go
 <style scoped>
 * {
   margin: 0;
@@ -19,6 +24,8 @@
 }
 
 body {
-  font-family: Poppins, sans-serif;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
 </style>
