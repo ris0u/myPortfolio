@@ -14,7 +14,5 @@ export default {
 </script>
 
 <style scoped>
-.projects {
-  /* Add your styles here */
-}
+
 </style>

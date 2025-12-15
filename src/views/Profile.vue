@@ -17,11 +17,12 @@
 export default {
   name: 'Profile'
 }
+
+
 </script>
 
 
 <style scoped>
-
 .Profile {
     margin-top: 2%;
     display: flex;
@@ -32,11 +33,13 @@ export default {
 }
 
 .profile-navbar {
-    margin-left: 76%;
+    margin-left: 50%;
 }
 .profile-navbar ul {
     list-style-type: none;
+    text-decoration: none;
     display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 

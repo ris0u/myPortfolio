@@ -17,7 +17,4 @@ export default {
 </script>
 
 <style scoped>
-.contact {
-  /* Add your styles here */
-}
 </style>
