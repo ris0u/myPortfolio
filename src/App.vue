@@ -1,18 +1,13 @@
 <script setup>
-import Header from './components/Header.vue'
-import About from './components/About.vue'
-import Projects from './components/Projects.vue'
+import Header from './components/Profile.vue'
+import About from './components/Login.vue'
+import Hobby from './components/Creative.vue'
 import Contact from './components/Contact.vue'
-import Footer from './components/Footer.vue'
+import Footer from './components/Showcase.vue'
 </script>
 
 <template>
     <div id="app">
-        <Header />
-        <About />
-        <Projects />
-        <Contact />
-        <Footer />
     </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about">
+  <section id="auth" class="auth">
     <h2>About Me</h2>
     <p>Welcome to my portfolio. I am a developer passionate about creating amazing web experiences.</p>
   </section>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'About'
+  name: 'Auth'
 }
 </script>
 

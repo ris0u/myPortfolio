@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="projects">
+  <section id="showcase" class="showcase">
     <h2>My Projects</h2>
     <div class="project-list">
       <!-- Add project items here -->
@@ -9,12 +9,12 @@
 
 <script>
 export default {
-  name: 'Projects'
+  name: 'Showcase'
 }
 </script>
 
 <style scoped>
-.projects {
+.footer {
   /* Add your styles here */
 }
 </style>
