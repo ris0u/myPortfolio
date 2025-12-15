@@ -5,8 +5,8 @@ import Login from '../views/Login.vue';
 const routes = [
   { path: '/login', component: Login },
   { 
-    path: '/portfolio',
-    redirect: '/portfolio/profile',
+    path: '/myPortfolio',
+    redirect: '/myPortfolio/profile',
     children: [
       { path: 'profile', component: () => import('../views/Profile.vue') },
       { path: 'showcase', component: () => import('../views/Showcase.vue') },
@@ -26,7 +26,7 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   const isAuthenticated = localStorage.getItem('isLoggedIn') === 'true';
   
-  if (to.path.startsWith('/portfolio') && !isAuthenticated) {
+  if (to.path.startsWith('/myPortfolio') && !isAuthenticated) {
     next('/login');
   } else {
     next();

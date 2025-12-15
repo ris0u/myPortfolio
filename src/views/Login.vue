@@ -88,27 +88,27 @@ input {
   width: 100%;
   padding: 12px;
   margin-top: 5px;
-  background: #0a192f;
+  background: var(--primary-navy);
   border: 1px solid #233554;
-  color: white;
+  color: var(--white);
   border-radius: 4px;
   transition: border 0.3s ease;
 }
 
 input:focus {
   outline: none;
-  border-color: #64ffda; /* Accent Blue */
+  border-color: var(--accent-blue); /* Accent Blue */
 }
 
 .login-btn {
   width: 100%;
   padding: 12px;
   background: transparent;
-  border: 1px solid #64ffda;
-  color: #64ffda;
+  border: 1px solid var(--white);
+  color: var(--white);
   cursor: pointer;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .login-btn:hover {

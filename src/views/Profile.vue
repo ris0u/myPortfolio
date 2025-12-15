@@ -26,7 +26,7 @@ export default {
 .Profile {
     margin-top: 2%;
     display: flex;
-    justfiy-content: center;
+    justify-content: center;
     align-items: center;
     gap: 2%
     

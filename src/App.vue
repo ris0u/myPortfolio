@@ -9,6 +9,7 @@ import Showcase from './views/Showcase.vue'
 <template>
     <div id="app">
         <Auth />
+        <Profile />
     </div>
 </template>
 
