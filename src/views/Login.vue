@@ -11,7 +11,7 @@ const handleLogin = () => {
   // Simple hardcoded validation
   if (username.value === 'kian' && password.value === 'kian123') {
     localStorage.setItem('isLoggedIn', 'true');
-    router.push('/myPortfolio/profile');
+    router.push('/myPortfolio/Contact');
   } else {
     errorMessage.value = 'Invalid username or password';
   }
