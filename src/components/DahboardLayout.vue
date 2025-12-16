@@ -1,3 +1,13 @@
+<script setup>
+import { useRouter } from 'vue-router';
+const router = useRouter();
+
+const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    router.push('/login');
+}
+</script>
+
 <template>
   <div class="dashboard-wrapper">
     <aside class="sidebar-nav">
@@ -16,15 +26,6 @@
   </div>
 </template>
 
-<script setup>
-import { useRouter } from 'vue-router';
-const router = useRouter();
-
-const handleLogout = () => {
-    localStorage.removeItem('isLoggedIn');
-    router.push('/login');
-}
-</script>
 
 <style scoped>
 .dashboard-wrapper {

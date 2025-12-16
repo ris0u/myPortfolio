@@ -11,7 +11,7 @@ const handleLogin = () => {
   // Simple hardcoded validation
   if (username.value === 'kian' && password.value === 'kian123') {
     localStorage.setItem('isLoggedIn', 'true');
-    router.push('/myPortfolio/Contact');
+    router.push('/myPortfolio/Profile');
   } else {
     errorMessage.value = 'Invalid username or password';
   }
@@ -54,7 +54,7 @@ const handleLogin = () => {
   background: var(--secondary-navy);
   padding: 2.5rem;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   width: 100%;
   max-width: 400px;
   text-align: center;
