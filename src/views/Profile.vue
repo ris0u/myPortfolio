@@ -15,7 +15,7 @@ library.add(faUser, faEnvelope, faGithub, faLinkedin)
 const firstName = ref('Kian');
 const lastName = ref('Manalastas')
 const tagline = ref('UI/UX Designer | FrontEnd Developer');
-const bio = ref('Motivated and detail-oriented fresh graduate with a strong academic foundation in Computer Engineering. Skilled in problem-solving, teamwork, and adapting quickly to new challenges. Demonstrated ability to learn and apply concepts through academic projects, internships, and volunteer work. Seeking an entry-level opportunity to contribute to organizational success while continuing to develop professional expertise.');
+const bio = ref('Highly motivated and detail-oriented with a strong academic foundation in Computer Engineering. Skilled in problem-solving, teamwork, and adapting quickly to new challenges. Demonstrated ability to learn and apply concepts through academic projects, internships, and volunteer work. Seeking an entry-level opportunity to contribute to organizational success while continuing to develop professional expertise.');
 const location = ref('Metro Manila, Philippines');
 const email = ref('kian.manalastas11@gmail.com');
 const coreSkills = ref('Vue.js, JavaScript, CSS3, Figma, AdobeXD, Blender, Photoshop, Visual Studio Code, Github, Canva');
@@ -64,24 +64,21 @@ const coreSkills = ref('Vue.js, JavaScript, CSS3, Figma, AdobeXD, Blender, Photo
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 6px solid #fff; /* Cursor */
+  border-right: 4px solid var(--accent-blue); /* cursor */
 
-  /* Total cycle: 2s typing + 3s pause + 2s deleting = 7s */
-  animation: typing 7s steps(16) infinite,
-             blink .6s step-end infinite;
+  /* 2s typing + 3s pause + 2s deleting = 7s total */
+  animation: typing 7s steps(10) infinite;
 }
 
 /* Typing + pause + deleting */
 @keyframes typing {
-  0%   { width: 0ch }      /* start */
-  30%  { width: 10ch }     /* typing finished (2s) */
-  70%  { width: 10ch }     /* hold for 3s */
-  100% { width: 0ch }      /* delete back to start */
-}
-
-/* Cursor blink */
-@keyframes blink {
-  50% { border-color: transparent }
+  0%   { width: 0ch; border-right-color: var(--accent-blue) }   /* typing starts, cursor solid */
+  30%  { width: 10ch; border-right-color: var(--accent-blue) }  /* typing ends */
+  40%  { width: 10ch; border-right-color: transparent } /* start blinking */
+  50%  { width: 10ch; border-right-color: var(--accent-blue) }
+  60%  { width: 10ch; border-right-color: transparent }
+  70%  { width: 10ch; border-right-color: var(--accent-blue) }  /* end of blinking phase */
+  100% { width: 0ch; border-right-color: var(--accent-blue) }   /* deleting, cursor solid again */
 }
 
 .profile-page {
@@ -180,6 +177,7 @@ h2 {
 }
 
 .details-grid {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
