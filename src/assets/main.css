@@ -1,0 +1,29 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--secondary-navy);
+}
+
+:root {
+  --primary-navy: #0a192f;
+  --secondary-navy: #112240;
+  --accent-blue: #64ffda; /* for hover effects */
+  --text-light: #ccd6f6;
+  --white: #ffffff;
+  --transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Spring effect */
+  --transition: all 0.5s ease-in-out;
+}
+
+.glass-panel {
+  background: rgba(17, 34, 64, 0.4); /* Secondary navy, 40% opaque */
+  border: 1px solid rgba(100, 255, 218, 0.2); /* Faint accent border */
+  backdrop-filter: blur(8px); /* The essential glass effect */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
