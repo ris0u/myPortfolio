@@ -1,3 +1,49 @@
+<script setup>
+import { ref } from 'vue';
+
+// Mapping your list to Font Awesome icons and specific brand colors
+const contactList = ref([
+  { 
+    name: 'Email', 
+    icon: 'fa-solid fa-envelope', 
+    color: '#64ffda',
+    link: 'mailto:kian.manalastas11@gmail.com',
+  },
+  { 
+    name: 'Phone', 
+    icon: 'fa-solid fa-phone', 
+    color: '#4facfe',
+    link: 'tel:+639454002426',
+  },
+  { name: 'LinkedIn', 
+  icon: 'fa-brands fa-linkedin-in', 
+  color: '#0077b5',
+  link: 'https://www.linkedin.com/in/kian-manalastas-7824331a1/'
+},
+  { name: 'Github', 
+  icon: 'fa-brands fa-github', 
+  color: '#ffffff',
+  link: 'https://github.com/ris0u',
+},
+  { name: 'Dribbble', 
+  icon: 'fa-brands fa-dribbble', 
+  color: '#ea4c89',
+  link: 'https://dribbble.com/_kiannn',
+},
+  { name: 'Facebook', 
+  icon: 'fa-brands fa-behance', 
+  color: '#1769ff',
+  link: 'https://www.facebook.com/risouu.kn/',
+},
+  { name: 'Instagram', 
+  icon: 'fa-brands fa-instagram', 
+  color: '#e1306c',
+  link: 'https://www.instagram.com/ris0u/',
+}
+]);
+</script>
+
+
 <template>
   <div class="contact-page">
     <div class="header-section">
@@ -9,7 +55,9 @@
       <a 
         v-for="contact in contactList" 
         :key="contact.name" 
-        href="#" 
+        :href="contact.link"
+        target="_blank"
+         rel="noopener noreferrer" 
         class="contact-card glass-panel"
         :style="{ '--accent-color': contact.color }"
       >
@@ -23,23 +71,16 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
-
-// Mapping your list to Font Awesome icons and specific brand colors
-const contactList = ref([
-  { name: 'Email', icon: 'fa-solid fa-envelope', color: '#64ffda' },
-  { name: 'Phone', icon: 'fa-solid fa-phone', color: '#4facfe' },
-  { name: 'LinkedIn', icon: 'fa-brands fa-linkedin-in', color: '#0077b5' },
-  { name: 'Github', icon: 'fa-brands fa-github', color: '#ffffff' },
-  { name: 'Behance', icon: 'fa-brands fa-behance', color: '#1769ff' },
-  { name: 'Dribbble', icon: 'fa-brands fa-dribbble', color: '#ea4c89' },
-]);
-</script>
 
 <style scoped>
+.header-section h1 {
+  color: var(--accent-blue);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
 .contact-page {
-  max-width: 1000px;
+  max-width: auto;
   margin: 0 auto;
 }
 
