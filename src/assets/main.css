@@ -27,3 +27,24 @@ body {
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--secondary-navy); /* match your theme */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-navy);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}

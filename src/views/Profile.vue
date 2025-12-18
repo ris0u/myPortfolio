@@ -19,6 +19,9 @@ const bio = ref('Highly motivated and detail-oriented with a strong academic fou
 const location = ref('Metro Manila, Philippines');
 const email = ref('kian.manalastas11@gmail.com');
 const coreSkills = ref('Vue.js, JavaScript, CSS3, Figma, AdobeXD, Blender, Photoshop, Visual Studio Code, Github, Canva');
+const role = ref('Front-End Developer and UI/UX Designer');
+const education = ref('Bachelor of Science in Computer Engineering - Polytechnic University of the Philippines')
+const experience = ref('Social innovation Technologies Inc. - Assisted in front-end development and UI/UX design.')
 </script>
 
 <template>
@@ -50,9 +53,9 @@ const coreSkills = ref('Vue.js, JavaScript, CSS3, Figma, AdobeXD, Blender, Photo
           <div><strong>Core Skill:</strong> 
             {{ coreSkills }}
           </div>
-          <div><strong>Role:</strong> Front-End Developer and UI/UX Designer</div>
-          <div><strong>Education:</strong> Bachelor of Science in Computer Engineering - Polytechnic University of the Philippines</div>
-          <div><strong>Internship:</strong> Social innovation Technologies Inc. - Assisted in front-end development and UI/UX design.</div>
+          <div><strong>Role:</strong> {{ role }}</div>
+          <div><strong>Education:</strong> {{ education }}</div>
+          <div><strong>Internship:</strong> {{ experience }}</div>
         </div>
       </div>
     </div>
