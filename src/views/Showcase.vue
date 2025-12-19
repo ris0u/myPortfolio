@@ -8,6 +8,13 @@ import personalproject2 from '../assets/images/personalproject2.png';
 
 const projects = ref([
   {
+    title: 'PhramAssist',
+    description: 'An academic project that unlocks a specific compartment to the time sets by the user and alerts them to take their meds.',
+    tech: 'Figma • CSS • Javascript • Vue.JS • MQTT • Firebase',
+    link: '#',
+    status: 'in-progress',
+  },
+  {
     title: 'Tips&Eats',
     description: 'An academic-based project food-niched social media web applications dedicated for food hobbyist and health enthusiast.',
     tech: 'Figma • CSS • Javascript • MySQL • PHP',
@@ -52,7 +59,6 @@ const projects = ref([
     link: 'https://www.figma.com/design/gaxe1LxWzs5LSlCaAQxk9X/Leave-Manage-System-UX-Design?node-id=303-3059&t=IRUKSAFGhhwDYrvI-1',
     status: 'completed'
   },
-
 ]);
 </script>
 
