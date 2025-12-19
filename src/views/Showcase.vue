@@ -187,6 +187,7 @@ h1 {
   border: 1px solid var(--accent-blue);
   padding: 5px 15px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .card-content {

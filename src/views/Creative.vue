@@ -1,32 +1,3 @@
-<template>
-  <div class="creative-page">
-    <div class="header-section">
-      <h1>Beyond the Code</h1>
-      <p class="tagline">When I'm not debugging, you'll find me exploring these passions.</p>
-    </div>
-
-    <div class="hobby-grid">
-      <div 
-        v-for="(hobby, index) in hobbies" 
-        :key="hobby.title" 
-        class="hobby-card glass-panel"
-        :style="{ '--hobby-color': hobby.color, animationDelay: (index * 0.15) + 's' }"
-      >
-        <div class="hobby-icon">
-          <i :class="hobby.icon"></i>
-        </div>
-        
-        <div class="hobby-info">
-          <h3>{{ hobby.title }}</h3>
-          <p>{{ hobby.description }}</p>
-        </div>
-        
-        <div class="hobby-glow"></div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup>
 import { ref } from 'vue';
 
@@ -57,6 +28,38 @@ const hobbies = ref([
   }
 ]);
 </script>
+
+
+
+<template>
+  <div class="creative-page">
+    <div class="header-section">
+      <h1>Beyond the Code</h1>
+      <p class="tagline">When I'm not debugging, you'll find me exploring these passions.</p>
+    </div>
+
+    <div class="hobby-grid">
+      <div 
+        v-for="(hobby, index) in hobbies" 
+        :key="hobby.title" 
+        class="hobby-card glass-panel"
+        :style="{ '--hobby-color': hobby.color, animationDelay: (index * 0.15) + 's' }"
+      >
+        <div class="hobby-icon">
+          <i :class="hobby.icon"></i>
+        </div>
+        
+        <div class="hobby-info">
+          <h3>{{ hobby.title }}</h3>
+          <p>{{ hobby.description }}</p>
+        </div>
+        
+        <div class="hobby-glow"></div>
+      </div>
+    </div>
+  </div>
+</template>
+
 
 <style scoped>
 .header-section h1 {
