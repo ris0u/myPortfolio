@@ -89,7 +89,7 @@ const projects = ref([
           <h3>{{ project.title }}</h3>
           <p>{{ project.description }}</p>
           <div class="card-footer">
-            <a :href="project.link" class="view-btn">View More</a>
+            <a :href="project.link" target="blank" class="view-btn">View More</a>
             <span class="status-dot" :class="project.status"></span>
           </div>
         </div>
