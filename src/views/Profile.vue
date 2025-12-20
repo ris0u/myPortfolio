@@ -2,15 +2,7 @@
 import { ref } from "vue";
 import profilePhoto from "@/assets/images/profile.jpg";
 import downloadResume from "@/assets/images/Kianmanalastas.png";
-import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
-// Allows to import the icons you want
-import { faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
-// Add them to the library
-library.add(faUser, faEnvelope, faGithub, faLinkedin);
 
 // Constant variables for profile information
 const firstName = ref("Kian");
