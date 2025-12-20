@@ -46,7 +46,7 @@ const experience = ref(
         </div>
         <button class="download-btn">
           <a v-bind:href="downloadResume" download>
-            <font-awesome-icon icon="fa-solid fa-user" />&nbsp; Download Resume
+            <font-awesome-icon :icon="['fas', 'user']" />&nbsp; Download Resume
           </a>
         </button>
       </div>

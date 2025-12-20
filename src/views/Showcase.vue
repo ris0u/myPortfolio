@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import acadproject1 from '../assets/images/acadproject1.png';
 import acadproject2 from '../assets/images/acadproject2.png';
 import acadproject3 from '../assets/images/acadproject3.jpg';
+import acadproject4 from '../assets/images/acadproject4.png';
 import personalproject1 from '../assets/images/personalproject1.png';
 import personalproject2 from '../assets/images/personalproject2.png';
 
@@ -11,6 +12,7 @@ const projects = ref([
     title: 'PharmAssist',
     description: 'An academic project that unlocks a specific compartment to the time sets by the user and alerts them to take their meds.',
     tech: 'Figma • CSS • Javascript • Vue.JS • MQTT • Firebase',
+    image: acadproject4,
     link: '#',
     status: 'in-progress',
   },

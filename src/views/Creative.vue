@@ -1,29 +1,30 @@
 <script setup>
 import { ref } from 'vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 const hobbies = ref([
   {
     title: 'Gaming',
     description: 'Competitive FPS and immersive RPGs. Currently exploring open-world mechanics.',
-    icon: 'fa-solid fa-gamepad',
+    icon: ['fas', 'gamepad'],
     color: '#a855f7' // Purple
   },
   {
     title: 'Photography',
     description: 'Capturing urban landscapes and street life. I love playing with light and shadows.',
-    icon: 'fa-solid fa-camera-retro',
+    icon: ['fas', 'camera-retro'],
     color: '#3b82f6' // Blue
   },
   {
     title: 'Designing',
     description: 'Creating sleek UI/UX designs and digital illustrations in my free time.',
-    icon: 'fa-solid fa-keyboard',
+    icon: ['fas', 'keyboard'],
     color: '#64ffda' // Accent Green
   },
   {
     title: 'Music Production',
     description: 'Experimenting with lo-fi beats and synthwave textures in my home studio.',
-    icon: 'fa-solid fa-music',
+    icon: ['fas', 'music'],
     color: '#f43f5e' // Rose
   }
 ]);
@@ -46,7 +47,7 @@ const hobbies = ref([
         :style="{ '--hobby-color': hobby.color, animationDelay: (index * 0.15) + 's' }"
       >
         <div class="hobby-icon">
-          <i :class="hobby.icon"></i>
+          <font-awesome-icon :icon="hobby.icon" />
         </div>
         
         <div class="hobby-info">

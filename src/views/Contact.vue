@@ -2,40 +2,40 @@
 import { ref } from 'vue';
 
 const contactList = ref([
-  { 
-    name: 'Email', 
-    icon: 'fa-solid fa-envelope', 
+  {
+    name: 'Email',
+    icon: ['fas', 'envelope'],
     color: '#64ffda',
     link: 'mailto:kian.manalastas11@gmail.com',
   },
-  { 
-    name: 'Phone', 
-    icon: 'fa-solid fa-phone', 
+  {
+    name: 'Phone',
+    icon: ['fas', 'phone'],
     color: '#4facfe',
     link: 'tel:+639454002426',
   },
-  { name: 'LinkedIn', 
-  icon: 'fa-brands fa-linkedin-in', 
+  { name: 'LinkedIn',
+  icon: ['fab', 'linkedin-in'],
   color: '#0077b5',
   link: 'https://www.linkedin.com/in/kian-manalastas-7824331a1/'
 },
-  { name: 'Github', 
-  icon: 'fa-brands fa-github', 
+  { name: 'Github',
+  icon: ['fab', 'github'],
   color: '#ffffff',
   link: 'https://github.com/ris0u',
 },
-  { name: 'Dribbble', 
-  icon: 'fa-brands fa-dribbble', 
+  { name: 'Dribbble',
+  icon: ['fab', 'dribbble'],
   color: '#ea4c89',
   link: 'https://dribbble.com/_kiannn',
 },
-  { name: 'Facebook', 
-  icon: 'fa-brands fa-behance', 
+  { name: 'Facebook',
+  icon: ['fab', 'facebook-f'],
   color: '#1769ff',
   link: 'https://www.facebook.com/risouu.kn/',
 },
-  { name: 'Instagram', 
-  icon: 'fa-brands fa-instagram', 
+  { name: 'Instagram',
+  icon: ['fab', 'instagram'],
   color: '#e1306c',
   link: 'https://www.instagram.com/ris0u/',
 }
@@ -61,10 +61,11 @@ const contactList = ref([
         :style="{ '--accent-color': contact.color }"
       >
         <div class="icon-box">
-          <i :class="contact.icon"></i>
+          <font-awesome-icon :icon="contact.icon" />
         </div>
         <span class="contact-name">{{ contact.name }}</span>
         <div class="glow-layer"></div>
+        <div class="neon-glow"></div>
       </a>
     </div>
   </div>
@@ -103,7 +104,7 @@ const contactList = ref([
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.icon-box i {
+.icon-box {
   font-size: 3rem;
   color: var(--accent-color);
   margin-bottom: 15px;
@@ -148,5 +149,9 @@ const contactList = ref([
 .contact-card:hover .contact-name {
   color: var(--accent-color);
   text-shadow: 0 0 10px var(--accent-color);
+}
+
+.neon-glow {
+  background: var(--heatmap-gradient);
 }
 </style>
