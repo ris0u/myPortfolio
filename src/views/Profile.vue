@@ -1,27 +1,36 @@
 <script setup>
-import { ref } from 'vue';
-import profilePhoto from '@/assets/images/profile.jpg';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { ref } from "vue";
+import profilePhoto from "@/assets/images/profile.jpg";
+import downloadResume from "@/assets/images/Kianmanalastas.png";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 // Allows to import the icons you want
-import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 // Add them to the library
-library.add(faUser, faEnvelope, faGithub, faLinkedin)
+library.add(faUser, faEnvelope, faGithub, faLinkedin);
 
 // Constant variables for profile information
-const firstName = ref('Kian');
-const lastName = ref('Manalastas')
-const tagline = ref('UI/UX Designer | FrontEnd Developer');
-const bio = ref('Highly motivated and detail-oriented with a strong academic foundation in Computer Engineering. Skilled in problem-solving, teamwork, and adapting quickly to new challenges. Demonstrated ability to learn and apply concepts through academic projects, internships, and volunteer work. Seeking an entry-level opportunity to contribute to organizational success while continuing to develop professional expertise.');
-const location = ref('Metro Manila, Philippines');
-const email = ref('kian.manalastas11@gmail.com');
-const coreSkills = ref('Vue.js, JavaScript, CSS3, Figma, AdobeXD, Blender, Photoshop, Visual Studio Code, Github, Canva, Trello, Firebase, RestAPI, Git, Github, MQTT, ');
-const role = ref('Front-End Developer and UI/UX Designer');
-const education = ref('Bachelor of Science in Computer Engineering - Polytechnic University of the Philippines')
-const experience = ref('Social innovation Technologies Inc. - Assisted in front-end development and UI/UX design.')
+const firstName = ref("Kian");
+const lastName = ref("Manalastas");
+const tagline = ref("UI/UX Designer | FrontEnd Developer");
+const bio = ref(
+  "Highly motivated and detail-oriented with a strong academic foundation in Computer Engineering. Skilled in problem-solving, teamwork, and adapting quickly to new challenges. Demonstrated ability to learn and apply concepts through academic projects, internships, and volunteer work. Seeking an entry-level opportunity to contribute to organizational success while continuing to develop professional expertise."
+);
+const location = ref("Metro Manila, Philippines");
+const email = ref("kian.manalastas11@gmail.com");
+const coreSkills = ref(
+  "Vue.JS, Node.JS, JavaScript, CSS3, MQTT, Postman, HTML5, Bootstrap, PHP, MySQL, Firebase, RestAPI, Git, Figma, AdobeXD, Blender, Photoshop, Premiere Pro, Visual Studio Code, Github, Canva, Trello"
+);
+const role = ref("Front-End Developer and UI/UX Designer");
+const education = ref(
+  "Bachelor of Science in Computer Engineering - Polytechnic University of the Philippines"
+);
+const experience = ref(
+  "Social innovation Technologies Inc. - Assisted in front-end development and UI/UX design."
+);
 </script>
 
 <template>
@@ -31,16 +40,23 @@ const experience = ref('Social innovation Technologies Inc. - Assisted in front-
         {{ firstName }} <span class="lastname">{{ lastName }}</span>
       </h1>
       <p class="tagline">{{ tagline }}</p>
-      
     </div>
 
     <div class="profile-content">
-      
       <div class="profile-sidebar">
         <div class="photo-container">
-          <img v-bind:src="profilePhoto" alt="Profile Photo" class="profile-photo" />
+          <img
+            v-bind:src="profilePhoto"
+            alt="Profile Photo"
+            class="profile-photo"
+          />
           <div class="photo-border-pulse" />
         </div>
+        <button class="download-btn">
+          <a v-bind:href="downloadResume" download>
+            <font-awesome-icon icon="fa-solid fa-user" />&nbsp; Download Resume
+          </a>
+        </button>
       </div>
 
       <div class="profile-details">
@@ -48,11 +64,9 @@ const experience = ref('Social innovation Technologies Inc. - Assisted in front-
         <p class="bio">{{ bio }}</p>
 
         <div class="details-grid">
-          <div><strong>Location:</strong> {{ location }} </div>
+          <div><strong>Location:</strong> {{ location }}</div>
           <div><strong>Email:</strong> {{ email }}</div>
-          <div><strong>Core Skill:</strong> 
-            {{ coreSkills }}
-          </div>
+          <div><strong>Core Skill:</strong> {{ coreSkills }}</div>
           <div><strong>Role:</strong> {{ role }}</div>
           <div><strong>Education:</strong> {{ education }}</div>
           <div><strong>Internship:</strong> {{ experience }}</div>
@@ -75,13 +89,34 @@ const experience = ref('Social innovation Technologies Inc. - Assisted in front-
 
 /* Typing + pause + deleting */
 @keyframes typing {
-  0%   { width: 0ch; border-right-color: var(--accent-blue) }   /* typing starts, cursor solid */
-  30%  { width: 10ch; border-right-color: var(--accent-blue) }  /* typing ends */
-  40%  { width: 10ch; border-right-color: transparent } /* start blinking */
-  50%  { width: 10ch; border-right-color: var(--accent-blue) }
-  60%  { width: 10ch; border-right-color: transparent }
-  70%  { width: 10ch; border-right-color: var(--accent-blue) }  /* end of blinking phase */
-  100% { width: 0ch; border-right-color: var(--accent-blue) }   /* deleting, cursor solid again */
+  0% {
+    width: 0ch;
+    border-right-color: var(--accent-blue);
+  } /* typing starts,  cursor solid */
+  30% {
+    width: 10ch;
+    border-right-color: var(--accent-blue);
+  } /* typing ends */
+  40% {
+    width: 10ch;
+    border-right-color: transparent;
+  } /* start blinking */
+  50% {
+    width: 10ch;
+    border-right-color: var(--accent-blue);
+  }
+  60% {
+    width: 10ch;
+    border-right-color: transparent;
+  }
+  70% {
+    width: 10ch;
+    border-right-color: var(--accent-blue);
+  } /* end of blinking phase */
+  100% {
+    width: 0ch;
+    border-right-color: var(--accent-blue);
+  } /* deleting, cursor solid again */
 }
 
 .profile-page {
@@ -91,9 +126,9 @@ const experience = ref('Social innovation Technologies Inc. - Assisted in front-
 }
 
 .header-section {
-    margin-bottom: 40px;
-    border-bottom: 2px solid var(--secondary-navy);
-    padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid var(--secondary-navy);
+  padding-bottom: 10px;
 }
 
 h1 {
@@ -103,9 +138,9 @@ h1 {
 }
 
 .tagline {
-    color: var(--text-light);
-    font-size: 1.1rem;
-    font-weight: 300;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .profile-content {
@@ -118,6 +153,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 1vw;
+  gap: 3vh;
 }
 
 /* --- Photo Animation: Pulse Effect --- */
@@ -126,7 +163,7 @@ h1 {
   width: 400px;
   height: 400px;
   margin-bottom: 30px;
-  margin-left: 2vw;
+
 }
 
 .profile-photo {
@@ -141,22 +178,31 @@ h1 {
 }
 
 .photo-border-pulse {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 1px solid var(--accent-blue);
-    border-radius: 50%;
-    opacity: 0.4;
-    /* Apply a continuous pulse animation */
-    animation: pulse 3s infinite cubic-bezier(0.66, 0.0, 0.0, 1.0);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 1px solid var(--accent-blue);
+  border-radius: 50%;
+  opacity: 0.4;
+  /* Apply a continuous pulse animation */
+  animation: pulse 3s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
 @keyframes pulse {
-  0% { transform: scale(0.9); opacity: 0.4; }
-  50% { transform: scale(1.1); opacity: 0.6; }
-  100% { transform: scale(0.9); opacity: 0.4; }
+  0% {
+    transform: scale(0.9);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.4;
+  }
 }
 
 /* --- Profile Details (Right Column) --- */
@@ -165,32 +211,60 @@ h1 {
 }
 
 h2 {
-    color: var(--text-light);
-    border-bottom: 1px solid var(--primary-navy);
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--primary-navy);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
 }
 
 .bio {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #a8b2d1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #a8b2d1;
 }
 
 .details-grid {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-bottom: 40px;
-    padding: 20px;
-    background: var(--primary-navy);
-    border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: var(--primary-navy);
+  border-radius: 8px;
 }
 
 .details-grid strong {
-    color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.download-btn {
+  
+  padding: 12px 25px;
+  background: transparent;
+  border: 1px solid var(--accent-blue);
+  color: var(--accent-blue);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.download-btn:hover {
+  background: var(--accent-blue);
+  color: var(--primary-navy);
+}
+
+.download-btn a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.download-btn a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 </style>

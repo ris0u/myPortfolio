@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue';
 
-// Mapping your list to Font Awesome icons and specific brand colors
 const contactList = ref([
   { 
     name: 'Email', 
