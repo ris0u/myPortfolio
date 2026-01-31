@@ -57,8 +57,6 @@ const experience = ref(
 
         <div class="details-grid">
           <div><strong>Location:</strong> {{ location }}</div>
-          <div><strong>Email:</strong> {{ email }}</div>
-          <div><strong>Core Skill:</strong> {{ coreSkills }}</div>
           <div><strong>Role:</strong> {{ role }}</div>
           <div><strong>Education:</strong> {{ education }}</div>
           <div><strong>Internship:</strong> {{ experience }}</div>
