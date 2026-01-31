@@ -10,9 +10,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5, faCss3, faNodeJs, faVuejs, faPhp, faPython, faJs, faReact } from '@fortawesome/free-brands-svg-icons'
 
 // Add icons to the library
-library.add(fas, fab)
+library.add(fas, fab, faHtml5, faCss3, faNodeJs, faVuejs, faPhp, faPython, faJs, faReact)
 
 // Define routes
 const routes = [

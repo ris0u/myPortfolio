@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 const contactList = ref([
   {
