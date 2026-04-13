@@ -2,7 +2,15 @@
 import { ref } from "vue";
 import profilePhoto from "@/assets/images/profile.jpg";
 import downloadResume from "@/assets/images/Kianmanalastas.png";
+import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+// Allows to import the icons you want
+import { faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+// Add them to the library
+library.add(faUser, faEnvelope, faGithub, faLinkedin);
 
 // Constant variables for profile information
 const firstName = ref("Kian");
@@ -14,7 +22,7 @@ const bio = ref(
 const location = ref("Metro Manila, Philippines");
 const email = ref("kian.manalastas11@gmail.com");
 const coreSkills = ref(
-  "Vue.JS, Node.JS, JavaScript, CSS3, MQTT, Postman, HTML5, Bootstrap, PHP, MySQL, Firebase, RestAPI, Git, Figma, AdobeXD, Blender, Photoshop, Premiere Pro, Visual Studio Code, Github, Canva, Trello"
+  "Vue.JS, Node.JS, JavaScript, CSS3, PHP, Firebase, RestAPI, Figma, Bootstrap"
 );
 const role = ref("Front-End Developer and UI/UX Designer");
 const education = ref(
@@ -46,7 +54,7 @@ const experience = ref(
         </div>
         <button class="download-btn">
           <a v-bind:href="downloadResume" download>
-            <font-awesome-icon :icon="['fas', 'user']" />&nbsp; Download Resume
+            <font-awesome-icon icon="fa-solid fa-user" />&nbsp; Download Resume
           </a>
         </button>
       </div>
@@ -57,6 +65,8 @@ const experience = ref(
 
         <div class="details-grid">
           <div><strong>Location:</strong> {{ location }}</div>
+          <div><strong>Email:</strong> {{ email }}</div>
+          <div><strong>Core Skill:</strong> {{ coreSkills }}</div>
           <div><strong>Role:</strong> {{ role }}</div>
           <div><strong>Education:</strong> {{ education }}</div>
           <div><strong>Internship:</strong> {{ experience }}</div>
