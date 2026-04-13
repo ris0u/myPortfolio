@@ -10,11 +10,11 @@ import personalproject2 from '../assets/images/personalproject2.png';
 const projects = ref([
   {
     title: 'PharmAssist',
-    description: 'An academic project that unlocks a specific compartment to the time sets by the user and alerts them to take their meds.',
+    description: 'An academic project that automatically unlocks the compartment according to the time set by the user and alerts them to take their medication.',
     tech: 'Figma • CSS • Javascript • Vue.JS • MQTT • Firebase',
     image: acadproject4,
-    link: 'https://github.com/ris0u/myPortfolio',
-    status: 'in-progress',
+    link: 'https://github.com/ris0u/PharmAssist',
+    status: 'completed',
   },
   {
     title: 'Tips&Eats',

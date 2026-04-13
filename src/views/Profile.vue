@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import profilePhoto from "@/assets/images/profile.jpg";
-import downloadResume from "@/assets/images/Kianmanalastas.png";
+import downloadResume from "@/assets/images/profile.pdf";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 

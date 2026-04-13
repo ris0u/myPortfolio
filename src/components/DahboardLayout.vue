@@ -2,11 +2,6 @@
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
-
-const handleLogout = () => {
-    localStorage.removeItem('isLoggedIn');
-    router.push('/login');
-}
 </script>
 
 <template>
@@ -17,8 +12,6 @@ const handleLogout = () => {
       <router-link to="/myPortfolio/Showcase">Showcase</router-link>
       <router-link to="/myPortfolio/Contact">Contact</router-link>
       <router-link to="/myPortfolio/Creative">Creative</router-link>
-      
-      <button class="logout-btn" @click="handleLogout">Logout</button>
     </aside>
     
     <main class="content-area">
