@@ -36,7 +36,7 @@ const hobbies = ref([
   <div class="creative-page">
     <div class="header-section">
       <h1>Beyond the Code</h1>
-      <p class="tagline">When I'm not debugging, you'll find me exploring these passions.</p>
+      <p class="tagline">When I'm free, you'll find me exploring these passions.</p>
     </div>
 
     <div class="hobby-grid">
