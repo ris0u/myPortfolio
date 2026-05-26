@@ -25,21 +25,11 @@ const contactList = ref([
   color: '#ffffff',
   link: 'https://github.com/ris0u',
 },
-  { name: 'Dribbble',
-  icon: ['fab', 'dribbble'],
-  color: '#ea4c89',
-  link: 'https://dribbble.com/_kiannn',
-},
   { name: 'Facebook',
   icon: ['fab', 'facebook-f'],
   color: '#1769ff',
   link: 'https://www.facebook.com/risouu.kn/',
 },
-  { name: 'Instagram',
-  icon: ['fab', 'instagram'],
-  color: '#e1306c',
-  link: 'https://www.instagram.com/ris0u/',
-}
 ]);
 </script>
 
