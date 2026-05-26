@@ -24,7 +24,7 @@ const email = ref("kian.manalastas11@gmail.com");
 const coreSkills = ref(
   "Vue.JS, Node.JS, JavaScript, CSS3, PHP, Firebase, RestAPI, Figma, Bootstrap"
 );
-const role = ref("Front-End Developer and UI/UX Designer");
+const role = ref("Front-End Developer | UI/UX Designer | QA Tester | System Engineer");
 const education = ref(
   "Bachelor of Science in Computer Engineering - Polytechnic University of the Philippines"
 );
@@ -67,7 +67,7 @@ const experience = ref(
           <div><strong>Location:</strong> {{ location }}</div>
           <div><strong>Email:</strong> {{ email }}</div>
           <div><strong>Core Skill:</strong> {{ coreSkills }}</div>
-          <div><strong>Role:</strong> {{ role }}</div>
+          <div><strong>Desired Role:</strong> {{ role }}</div>
           <div><strong>Education:</strong> {{ education }}</div>
           <div><strong>Internship:</strong> {{ experience }}</div>
         </div>
