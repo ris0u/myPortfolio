@@ -38,7 +38,7 @@ const projects = ref([
   {
     title: 'EchoSense',
     description: 'An academic AI‑powered research project for speech‑to‑text transcription, keyword alerts, and speaker‑distance detection.',
-    tech: 'Python',
+    tech: 'Python • PyAudio • WhisperAPI',
     image: acadproject3,
     link: 'https://github.com/ris0u/EcoSense-A-Smart-Wearable-for-Deaf-individuals-and-Hearing-Impaired',
     status: 'completed'
