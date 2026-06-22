@@ -45,20 +45,20 @@ const projects = ref([
   },
 
   {
-    title: 'Leave Management System',
-    description: 'A personal design project that streamlines the process of managing employee leave requests and approvals.',
-    tech: 'Figma',
-    image: personalproject1,
-    link: 'https://www.figma.com/design/gaxe1LxWzs5LSlCaAQxk9X/Leave-Manage-System-UX-Design?node-id=0-1&t=9m3fF5QdBeIbeOQc-1',
-    status: 'completed'
-  },
-
-  {
     title: 'Fashion E-Commerce Design',
     description: 'A personal project focused on designing a user-friendly and visually appealing e-commerce platform for fashion products.',
     tech: 'Figma',
     image: personalproject2,
     link: 'https://www.figma.com/design/gaxe1LxWzs5LSlCaAQxk9X/Leave-Manage-System-UX-Design?node-id=303-3059&t=IRUKSAFGhhwDYrvI-1',
+    status: 'completed'
+  },
+
+  {
+    title: 'Leave Management System',
+    description: 'A personal design project that streamlines the process of managing employee leave requests and approvals.',
+    tech: 'Figma',
+    image: personalproject1,
+    link: 'https://www.figma.com/design/gaxe1LxWzs5LSlCaAQxk9X/Leave-Manage-System-UX-Design?node-id=0-1&t=9m3fF5QdBeIbeOQc-1',
     status: 'completed'
   },
 ]);
