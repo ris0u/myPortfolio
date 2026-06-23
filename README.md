@@ -8,7 +8,6 @@ A modern, responsive portfolio website built with Vue 3 and Vite. This project s
 
 ## Features
 
-- **Authentication System**: Secure login page with localStorage-based authentication
 - **Dashboard Layout**: Clean, organized interface for portfolio sections
 - **Profile Section**: Personal information and bio
 - **Showcase**: Display of projects and achievements
@@ -54,11 +53,7 @@ npm install
 npm run dev
 ```
 
-3. Open the app
-
-Visit http://localhost:5173 (or the URL shown in the terminal).
-
-4. Build for production
+3. Build for production
 
 ```bash
 npm run build
@@ -74,18 +69,3 @@ npm run preview
 - `src/views/*` — page components (Profile, Showcase, Creative, Contact, Login)
 - `src/components/*` — shared UI components (Dashboard layout, etc.)
 - `src/assets/main.css` — primary styles and variables
-
-## Authentication and routing
-
-This project uses a simple localStorage flag (`isLoggedIn`) to simulate authentication. The router has a navigation guard that redirects unauthenticated users to `/login` when they try to access `/myPortfolio/*` routes.
-
-To sign in during development, set the `isLoggedIn` flag in the browser devtools console:
-
-```js
-localStorage.setItem('isLoggedIn', 'true')
-```
-
-To sign out:
-
-```js
-localStorage.removeItem('isLoggedIn')
