@@ -15,7 +15,7 @@ library.add(faUser, faEnvelope, faGithub, faLinkedin);
 // Constant variables for profile information
 const firstName = ref("Kian");
 const lastName = ref("Manalastas");
-const tagline = ref("UI/UX Designer | FrontEnd Developer");
+const tagline = ref("UI/UX Designer | Developer | QA Tester | System Engineer");
 const bio = ref(
   "Highly motivated and detail-oriented with a strong academic foundation in Computer Engineering. Skilled in problem-solving, teamwork, and adapting quickly to new challenges. Demonstrated ability to learn and apply concepts through academic projects, internships, and volunteer work. Seeking an entry-level opportunity to contribute to organizational success while continuing to develop professional expertise."
 );
