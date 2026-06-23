@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/main.css'
 import { createRouter, createWebHistory } from 'vue-router';
-import DahboardLayout from '@/components/DahboardLayout.vue';
+import DashboardLayout from '@/components/DashboardLayout.vue';
 
 // FontAwesome configuration
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -20,7 +20,7 @@ const routes = [
   { 
     path: '/myPortfolio',
     redirect: '/myPortfolio/profile',
-    component: DahboardLayout,
+    component: DashboardLayout,
     children: [
       { path: 'profile', component: () => import('./views/Profile.vue') },
       { path: 'showcase', component: () => import('./views/Showcase.vue') },
