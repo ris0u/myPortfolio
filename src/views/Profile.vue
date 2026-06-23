@@ -267,4 +267,87 @@ h2 {
   text-decoration: none;
   color: inherit;
 }
+
+/* Responsive styles */
+.profile-content {
+  flex-wrap: wrap;
+}
+
+.profile-sidebar {
+  flex: 1 1 320px;
+  max-width: 380px;
+  width: 100%;
+}
+
+.photo-container {
+  width: min(100%, 380px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+@media (max-width: 992px) {
+  .profile-content {
+    gap: 40px;
+  }
+
+  .profile-sidebar {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 0 20px;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .profile-details {
+    width: 100%;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .photo-container {
+    width: min(100%, 280px);
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 520px) {
+  .profile-content {
+    gap: 20px;
+  }
+
+  .photo-container {
+    width: 220px;
+  }
+
+  .details-grid {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+}
 </style>
